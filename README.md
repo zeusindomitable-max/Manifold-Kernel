@@ -28,7 +28,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "manifold-kernel"
 version = "0.1.0"
-authors = [{ name = "Hari Hardiyan", email = "your_email@example.com" }]
+authors = [{ name = "Hari Hardiyan", email = "zeusindomitable@gmail.com" }]
 description = "Heat kernel regularizer on S² manifold in PyTorch"
 readme = "README.md"
 license = { text = "Dual License (MIT/GPLv3)" }
