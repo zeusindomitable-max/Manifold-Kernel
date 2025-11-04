@@ -51,3 +51,4 @@ dependencies = ["torch>=2.0", "numpy"]
 Homepage = "https://github.com/zeusindomitable-max/Manifold-Kernel/tree/main"
 Issues = "(https://github.com/zeusindomitable-max/Manifold-Kernel/tree/main)"
 ```
+![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17527422.svg)
