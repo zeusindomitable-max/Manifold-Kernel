@@ -18,6 +18,15 @@ Dual licensed under MIT and GPLv3 — choose whichever suits your use case.
 © 2025 Hari Hardiyan
 
 ---
+## 💝 Support
+
+Love this project? Help me keep building:
+
+**ETH:** ` 0x7cc8686f434cf9b2f274f46fcf73ba6394635b48`
+**BTC:** `1LUD9c2hYUERgPmtZCcUitDg8rgrNHfoYP`
+**SOL:** `7mp34H3DEdBu5SxWtgkoM6QApYVwKyaY4P1Um7fcnMjZ`
+
+Even small amounts help cover coffee ☕ and server costs!
 
 ## ⚙️ `pyproject.toml`
 ```toml
