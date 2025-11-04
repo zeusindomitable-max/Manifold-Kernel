@@ -1,10 +1,10 @@
-name: Run Unit Tests
+name: CI - Run Unit Tests
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, master, dev ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, master, dev ]
 
 jobs:
   test:
@@ -17,16 +17,26 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: '3.10'
 
-      - name: Install dependencies
+      - name: Upgrade pip & install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov
+          pip install pytest torch numpy
 
-      - name: Install package
+      - name: Add src to PYTHONPATH
+        run: echo "PYTHONPATH=$PWD/src" >> $GITHUB_ENV
+
+      - name: Install package (editable)
         run: pip install -e .
 
-      - name: Run tests
-        run: pytest tests/ -v --cov=src --cov-report=xml
+      - name: Run tests with pytest
+        run: pytest tests/ -v --maxfail=3 --disable-warnings
+
+      - name: Upload pytest logs (optional)
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pytest-failure-logs
+          path: .pytest_cache
+          
