@@ -1,0 +1,36 @@
+cff-version: 1.2.0
+title: "Manifold-Kernel: Geometric Heat Kernel Framework on Differentiable Manifolds"
+message: "If you use this software, please cite it using the metadata below."
+authors:
+  - family-names: "Hardiyan"
+    given-names: "Hari"
+    affiliation: "Independent Theoretical Physics and Quantum Mathematics Researcher"
+    orcid: "0000-0000-0000-0000"  # opsional, bisa hapus kalau tidak punya
+version: "1.0.0"
+date-released: "2025-11-05"
+license: "Dual License (Non-Commercial Free, Commercial Requires Royalty)"
+doi: "10.5281/zenodo.xxxxxxx"  # isi setelah kamu upload ke Zenodo
+repository-code: "https://github.com/zeusindomitable-max/Manifold-Kernel"
+keywords:
+  - heat kernel
+  - differential geometry
+  - manifold learning
+  - spectral analysis
+  - pytorch
+abstract: |
+  Manifold-Kernel is a research-grade framework for modeling heat kernel dynamics 
+  on differentiable manifolds using PyTorch. It provides modular geometry tools, 
+  spectral approximations, and experimental PDE solvers inspired by quantum 
+  geometric principles. This project introduces an open theoretical foundation 
+  for scalable manifold-based computation.
+
+preferred-citation:
+  type: article
+  authors:
+    - family-names: "Hardiyan"
+      given-names: "Hari"
+  title: "Manifold-Kernel: Geometric Heat Kernel Framework on Differentiable Manifolds"
+  journal: "Zenodo"
+  year: 2025
+  doi: "10.5281/zenodo.xxxxxxx"  # ganti setelah dapat DOI
+  url: "https://github.com/zeusindomitable-max/Manifold-Kernel"
