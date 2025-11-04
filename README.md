@@ -36,6 +36,6 @@ requires-python = ">=3.9"
 dependencies = ["torch>=2.0", "numpy"]
 
 [project.urls]
-Homepage = "https://github.com/harihardiyan/manifold-kernel"
-Issues = "https://github.com/harihardiyan/manifold-kernel/issues"
+Homepage = "https://github.com/zeusindomitable-max/Manifold-Kernel/tree/main"
+Issues = "(https://github.com/zeusindomitable-max/Manifold-Kernel/tree/main)"
 ```
