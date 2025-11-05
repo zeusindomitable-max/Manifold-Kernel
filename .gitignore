@@ -1,10 +1,21 @@
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
 *.egg-info/
 build/
 dist/
-.env
-.venv
-.cache/
-.ipynb_checkpoints/
+
+# Virtualenv
+venv/
+env/
+.venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Cache
+*.log
+*.out
+*.tmp
+*.pkl
