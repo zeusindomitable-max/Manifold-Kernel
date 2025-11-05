@@ -1,25 +1,35 @@
 ![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17527422.svg)
 
-# Manifold Kernel
-Heat Kernel Regularizer on the 2-Sphere (S²) implemented in PyTorch.
+# Manifold-Kernel
+**Geometric Heat Kernel Framework on Differentiable Manifolds**
 
-## Features
-- Abstract `Manifold` base class
-- Concrete implementation for S²
-- Heat kernel regularization with Gaussian kernel
-- Tests ensuring convergence and gradient stability
-
-## Usage
-```bash
-pytest -v
-python examples/s2_demo.py
-```
-License
-
-Dual licensed under MIT and GPLv3 — choose whichever suits your use case.
-© 2025 Hari Hardiyan
+[![CI Tests](https://github.com/zeusindomitable-max/Manifold-Kernel/actions/workflows/tests.yml/badge.svg)](https://github.com/zeusindomitable-max/Manifold-Kernel/actions)
 
 ---
+
+## 🔬 Overview
+**Manifold-Kernel** is a PyTorch-based framework implementing geometric heat kernel
+regularization on differentiable manifolds. It bridges analytical heat-equation
+theory with numerical variational optimization, providing a foundation for
+curvature-regularized learning systems.
+
+Mathematical foundation: [`docs/mathematical_foundation.md`](docs/mathematical_foundation.md)
+
+---
+
+## ⚗️ Example Usage
+```python
+import torch
+from heat_kernel.geometry.manifolds import S2Manifold
+from heat_kernel.core.heat_kernel import HeatKernelRegularizer
+
+manifold = S2Manifold(radius=1.0)
+kernel = HeatKernelRegularizer(manifold)
+
+theta = torch.tensor([[0.5, 1.0]])
+out = kernel.forward(theta, tau=0.1)
+print(out)
+
 ## 💝 Support
 
 Love this project? Help me keep building:
